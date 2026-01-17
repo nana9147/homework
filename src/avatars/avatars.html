@@ -1,16 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avatars 과제</title>
-  <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon" />
-  <link rel="icon" href="/src/assets/favicon/likelion.svg" />
-  <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css">
-  <link rel="stylesheet" href="./styles/avatars.css" />
-</head>
-<body>
-  <!-- 여기에 마크업을 구성해 주세요. -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatars 과제</title>
+    <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" />
+    <link rel="stylesheet" href="./styles/avatars.css" />
+  </head>
+  <body>
+    <h1 class="title">Avatars</h1>
+    <div class="board">
+      <ul class="container">
+        <li class="avatar-wrapper">
+          <img class="avatar-img" src="/src/avatars/images/face1.jpg" alt="user1" loading="lazy" width="64" height="64" />
+          <span class="avatar-status off" aria-hidden="true"></span>
+          <span class="sr-only">user1 오프라인</span>
+        </li>
+
+        <li class="avatar-wrapper">
+          <img class="avatar-img" src="/src/avatars/images/face2.jpg" alt="user2" loading="lazy" width="64" height="64" />
+          <span class="avatar-status on" aria-hidden="true"></span>
+          <span class="sr-only">user2 온라인</span>
+        </li>
+
+        <li class="avatar-wrapper">
+          <img class="avatar-img" src="/src/avatars/images/face3.jpg" alt="user3" loading="lazy" width="64" height="64" />
+          <span class="avatar-status off" aria-hidden="true"></span>
+          <span class="sr-only">user3 오프라인</span>
+        </li>
+
+        <li class="avatar-wrapper">
+          <img class="avatar-img" src="/src/avatars/images/face4.jpg" alt="user4" loading="lazy" width="64" height="64" />
+          <span class="avatar-status on" aria-hidden="true"></span>
+          <span class="sr-only">user4 온라인</span>
+        </li>
+
+        <li class="avatar-wrapper">
+          <img class="avatar-img" src="/src/avatars/images/face5.jpg" alt="user5" loading="lazy" width="64" height="64" />
+          <span class="avatar-status on" aria-hidden="true"></span>
+          <span class="sr-only">user5 온라인</span>
+        </li>
+
+        <li class="avatar-wrapper">
+          <img class="avatar-img" src="/src/avatars/images/face6.jpg" alt="user6" loading="lazy" width="64" height="64" />
+          <span class="avatar-status on" aria-hidden="true"></span>
+          <span class="sr-only">user6 온라인</span>
+        </li>
+
+        <li class="avatar-wrapper">
+          <img class="avatar-img" src="/src/avatars/images/face7.jpg" alt="user7" loading="lazy" width="64" height="64" />
+          <span class="avatar-status off" aria-hidden="true"></span>
+          <span class="sr-only">user7 오프라인</span>
+        </li>
+
+        <li class="avatar-wrapper">
+          <img class="avatar-img" src="/src/avatars/images/face8.jpg" alt="user8" loading="lazy" width="64" height="64" />
+          <span class="avatar-status off" aria-hidden="true"></span>
+          <span class="sr-only">user8 오프라인</span>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
