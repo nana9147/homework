@@ -1,1 +1,62 @@
-<!-- HTML 마크업을 작성해 주세요 -->
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <title>로그인 - NAVER</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="/" aria-label="네이버 홈으로 이동">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2315 444" role="img" aria-labelledby="logoTitle">
+          <title id="logoTitle">네이버 로고</title>
+          <g class="logo-group">
+            <path d="M665.53,0l-174,443.69h147.12l21.17-59.16h168.01l21.16,59.16h147.12L822.13,0h-156.6ZM743.84,142.41l49.59,138.59h-99.19l49.6-138.59Z" />
+            <polygon points="1471.56 0 1471.56 443.69 1819.11 443.69 1819.11 332.76 1612.06 332.76 1612.06 273.61 1811.72 273.61 1811.72 170.08 1612.06 170.08 1612.06 110.92 1819.11 110.92 1819.11 0 1471.56 0" />
+            <polygon points="1276.69 0 1172.3 291.74 1067.89 0 919.99 0 1093.99 443.69 1250.59 443.69 1424.59 0 1276.69 0" />
+            <polygon points="303.19 0 303.19 237.47 141.4 0 0 0 0 443.69 140.5 443.69 140.5 206.22 302.29 443.69 443.69 443.69 443.69 359.23 443.69 0 303.19 0" />
+            <path
+              d="M2104.41,207.05h-78.25v-96.13h77.83c20.75,0,39.93,12.89,46.09,32.7,10.29,33.08-14.15,63.43-45.68,63.43h0ZM2202.82,291.48l13.47-5.63c51.56-21.59,77.79-68.28,77.79-127.55,0-56.04-20.44-97.51-60.76-123.23-37.48-23.92-86.08-35.06-152.95-35.06h-187.29v443.69h140.5v-125.71h50.49l85.61,125.71h145.33l-112.18-152.21Z"
+            />
+          </g>
+        </svg>
+      </a>
+    </header>
+
+    <main id="main">
+      <form class="login-form">
+        <div class="input-group">
+          <input type="email" class="id-area" placeholder="아이디(이메일)" required />
+          <span class="error-msg">아이디는 이메일 형식으로 넣어주세요</span>
+        </div>
+
+        <div class="input-group">
+          <input type="password" class="password-area" placeholder="비밀번호" minlength="10" required />
+          <span class="error-msg">비밀번호는 10자리 이상 입력해 주세요</span>
+        </div>
+
+        <button type="submit" class="login-btn">로그인</button>
+
+        <div class="check-wrap">
+          <div class="keep">
+            <input type="checkbox" id="keep-login" class="sr-only" />
+            <label for="keep-login" class="checkbox-label">
+              <span class="checkbox-icon"></span>
+              <span class="label-text">로그인 상태 유지</span>
+            </label>
+          </div>
+
+          <div class="ip-security">
+            <a href="./pages/ip_security.html">IP 보안</a>
+            <input type="checkbox" id="ip-security-check" class="sr-only" />
+            <label class="ip-security-label" for="ip-security-check">
+              <span class="off">OFF</span>
+              <span class="on">ON</span>
+            </label>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
