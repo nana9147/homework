@@ -1,3 +1,25 @@
-@import "./card-component.css";
+@import './card-component.css';
 
 /* 카드 레이아웃 */
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  grid-auto-rows: 1fr;
+
+  @media (width>=1024px) {
+    gap: var(--small-spacing);
+    grid-template-columns: 1fr 1fr;
+
+    .product-item:nth-child(1),
+    .product-item:nth-child(2),
+    .product-item:nth-child(3) {
+      grid-column: 1/-1;
+    }
+  }
+
+  .product-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
