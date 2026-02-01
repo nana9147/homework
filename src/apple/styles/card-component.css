@@ -8,6 +8,7 @@
   align-items: center;
   text-align: center;
   min-block-size: var(--size);
+  block-size: 100%;
   row-gap: var(--small-spacing);
   padding-block: var(--large-spacing) clamp(300px, 40vh, 500px);
 
@@ -117,7 +118,8 @@
   /* 테마 색상 설정 */
   &.white-bg {
     .product-name,
-    .description {
+    .description,
+    .btn-outline {
       color: var(--black);
     }
     .btn-wrapper {
